@@ -1,0 +1,29 @@
+.entry {
+    background-color: lightgray;
+    border-color: black;
+    border-style: outset;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 33%;
+    height: 10%;
+}
+
+#top {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(../images/pexels-valeriya-1484657.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#rope {
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    top: -200px;
+}
