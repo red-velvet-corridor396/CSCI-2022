@@ -1,5 +1,8 @@
 let position = -200;
-const rope = document.getElementById("rope").style
+let opacity = 1;
+const rope = document.getElementById("rope").style;
+const curtain = document.getElementById("curtain").style;
+let fall = false;
 
 
 function ropeOver() {
@@ -11,6 +14,8 @@ function ropeOver() {
         }
 
     }, 50);
+
+    fall = true;
 
     // let intervalID = setInterval(() => {
     //     position -= 5;
@@ -33,8 +38,6 @@ function ropeOver() {
     // anotherInterval();
 }
 
-
-
 // function anotherInterval() {
 //     let intervalID = setInterval(() => {
 //         position += 5;
@@ -46,3 +49,33 @@ function ropeOver() {
 //     }, 50);
 // }
 
+function curtainFall() {
+    if(fall == true) {
+        curtain.display = "block"
+        document.body.style.backgroundImage = "url(../images/cemetary.jpg)"
+        let intervalID = setInterval(() => {
+            position += 5;
+            curtain.top = position + 'px';
+            if (position > window.outerHeight) {
+                curtain.display = "none"
+                clearInterval(intervalID)
+            }
+    
+        }, 10);
+    }
+}
+
+function blockVanish() {
+    if(fall == true) {
+        let intervalID = setInterval(() => {
+            opacity -= 0.1;
+            for(let i = 0; i < 5; i++) {
+                document.getElementsByClassName("entry")[i].style.opacity = opacity;
+            }
+            if (position == 0) {
+                clearInterval(intervalID)
+            }
+    
+        }, 50);
+    }
+}
