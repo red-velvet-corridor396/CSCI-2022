@@ -52,7 +52,7 @@ function ropeOver() {
 function curtainFall() {
     if(fall == true) {
         curtain.display = "block"
-        document.body.style.backgroundImage = "url(../images/cemetary.jpg)"
+        document.body.style.backgroundImage = "url(https://red-velvet-corridor396.github.io/CSCI-202-2/Assignment-2/images/cemetary.jpg)"
         let intervalID = setInterval(() => {
             position += 5;
             curtain.top = position + 'px';
