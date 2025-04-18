@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body onclick="curtainFall(); blockVanish()">
+<body>
 
     <img id="curtain" src="images/curtains1.png" alt="" width="100%">
 
 
-    <div id="top">
+    <div id="top" class="vanish">
         <h1><i>Odello, WA</i> Obituaries</h1>
         <h2>Welcome to the Odello, WA Obituary Archive—a place to honor, remember, and celebrate the lives of those
             we've lost. Browse tributes, share memories, and connect with our close-knit community as we reflect on the
             stories that shaped Odello.</h2>
     </div>
 
-    <img id="rope" src="images/Rope_PNG_Clipart-2.png" alt="" onclick="ropeOver()">
+    <img id="rope" src="images/Rope_PNG_Clipart-2.png" alt="" onclick="ropeOver(); curtainFall(); blockVanish()">
 
-    <div class="entry">
-        <img src="" alt="">
+    <div class="entry vanish">
         <h3>Dewey Randolph</h3>
         <p>Dewey Randolph, age 79, passed away peacefully after a brief illness. A lifelong resident of Washington
             state, Dewey was known for his warm heart, quiet strength, and deep love for family and community. He worked
@@ -33,8 +32,7 @@
             loving wife of 55 years, two children, and four grandchildren. Dewey's kindness, wisdom, and steady presence
             will be deeply missed by all who knew him. A private memorial will be held by the family.</p>
     </div>
-    <div class="entry">
-        <img src="" alt="">
+    <div class="entry vanish">
         <h3>Rees Arreola</h3>
         <p>Rees Arreola, 69, passed away peacefully after a courageous battle with cancer. A creative soul with a sharp
             wit and generous spirit, Rees touched the lives of many through both personal and professional endeavors.
@@ -44,8 +42,7 @@
             warmth or sense of humor. They are survived by a close-knit circle of family and friends who will carry
             their memory forward with love. A celebration of life will be held at a later date.</p>
     </div>
-    <div class="entry">
-        <img src="" alt="">
+    <div class="entry vanish">
         <h3>Josslyn Ziegler</h3>
         <p>Josslyn Ziegler, 95, passed away peacefully after a long journey with diabetes. A woman of quiet strength and
             unwavering grace, Josslyn lived a full and vibrant life surrounded by love, laughter, and resilience. Born
@@ -56,8 +53,7 @@
             three children, seven grandchildren, and twelve great-grandchildren. A private service will be held by the
             family to honor her remarkable life.</p>
     </div>
-    <div class="entry">
-        <img src="" alt="">
+    <div class="entry vanish">
         <h3>Mostafa Hogarth</h3>
         <p>Mostafa Hogarth, 55, passed away unexpectedly from heart disease, leaving behind a legacy of compassion,
             creativity, and deep integrity. A gifted writer and lifelong learner, Mostafa had a profound love for
@@ -68,8 +64,7 @@
             years, two brothers, and a wide circle of chosen family and friends. A memorial gathering will be announced
             at a later date to celebrate his life and legacy.</p>
     </div>
-    <div class="entry">
-        <img src="" alt="">
+    <div class="entry vanish">
         <h3>Eusebia Landau</h3>
         <p>Eusebia Landau, 32, has been missing since [insert date], and after exhaustive efforts by loved ones and
             authorities, she is now honored and remembered in the hearts of all who knew her. Eusebia was a bright,
@@ -79,6 +74,43 @@
             siblings, and countless friends who continue to hold onto hope, memory, and love. A vigil will be held in
             her honor, a space to share stories, celebrate her life, and keep her light alive.</p>
     </div>
+
+    <div id="grave">
+        <img id="headstone" src="images/headstone-png-10-665956952.png" alt="" width="250px" onclick="zombieHand()">
+        <img id="hand" src="images/zombie_hand.png" alt="" width="100px">
+        <img src="images/zombie.png" alt="" id="zombie" onclick="zombieClick()">
+    </div>
+
+
+
+    <audio class="mp3" id="curtain_mp3">
+        <source src="audio/curtain.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="mp3" id="howl">
+        <source src="audio/howl.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="mp3" id="earth1">
+        <source src="audio/earth1.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="mp3" id="dig">
+        <source src="audio/dig.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="mp3" id="growl_1">
+        <source src="audio/zombie_growl1.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="mp3" id="footsteps">
+        <source src="audio/footsteps.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="mp3" id="growl_2">
+        <source src="audio/zombie_growl2.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="JS/rope.js"></script>
 </body>
 
