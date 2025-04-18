@@ -36,3 +36,32 @@ body {
     top: 0;
     display: none;
 }
+
+#grave {
+    position: fixed;
+    bottom: 0;
+    right: 200px;
+    display: none;
+}
+
+#hand {
+    position: absolute;
+    right: 70px;
+    top: 300px;
+    /* 110px for hand above ground, 300px for below*/
+    /* display: none; */
+}
+
+#headstone {
+    position: relative;
+    top: 8px;
+}
+
+#zombie {
+    position: absolute;
+    right: 10px;
+    top: 300px;
+    /* negative values move zombie up */
+    /* -240px above ground*/
+    /* 300px below ground */
+}
