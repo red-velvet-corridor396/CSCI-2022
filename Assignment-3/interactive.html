@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="JS/interactive.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <ul>
+                <li><a href="index.html">Static</a></li>
+                <li><a href="animated.html">Animated</a></li>
+                <li><a href="interactive.html">Interactive</a></li>
+            </ul>
+        </nav>
+        <main>
+            
+        </main>
+        <footer>
+            <p>This panting is a digital recreation of "Counter-composition XIII" by Theo van Doesburg. It was created with p5.js. In-depth instructions for the interactive version can be found <a href="guide.html">here</a>.</p>
+        </footer>
+    </div>
+    <div id="rgbox">
+        <p id="trianglenum"></p>
+        <p id="tricolor"></p>
+        <p>
+            <div id="R">R</div>
+            <div id="G">G</div>
+            <div id="B">B</div>
+        </p>
+        <ul>
+            <li id="one" onclick="oneClick()">01</li>
+            <li id="five" onclick="fiveClick()">05</li>
+            <li id="ten" onclick="tenClick()">10</li>
+            <li id="fift" onclick="fiftClick()">50</li>
+        </ul>
+        
+    </div>
+    <script src="JS/RGB.js"></script>
+</body>
+</html>
