@@ -1,0 +1,20 @@
+body {
+    background-color: #1b1f26;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/images/wood.jpg);
+}
+
+#infoBox {
+    display: flex;
+    box-shadow: 5px 10px 5px;
+    background-color: rgb(199, 197, 197);
+}
+
+.cd:hover {
+    filter: brightness(50%);
+}
+
+#infoBox ul {
+    list-style-type: circle;
+}
