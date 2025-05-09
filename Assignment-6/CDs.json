@@ -86,7 +86,7 @@
         "country": "Japan",
         "genre": "Goregrind",
         "trivia": "The band uses photographs of Renée Hartevelt, the victim of 'The Kobe Cannibal,' who was somewhat famous in Japan for his gruesome crimes.",
-        "cover": "",
+        "cover": "https://red-velvet-corridor396.github.io/CSCI-202-2/Assignment-6/images/festerdecay2.jpg",
         "spine": ""
     },
     {
@@ -96,7 +96,7 @@
         "country": "China",
         "genre": "Goregrind",
         "trivia": "There isn't a damn thing online about these guys.",
-        "cover": "https://github.com/red-velvet-corridor396/CSCI-202-2/blob/main/Assignment-6/images/globularcyst.jpg",
+        "cover": "https://red-velvet-corridor396.github.io/CSCI-202-2/Assignment-6/images/globularcyst.jpg",
         "spine": ""
     },
     {
@@ -126,7 +126,7 @@
         "country": "Sweden",
         "genre": ["Goregrind","Deathgrind"],
         "trivia": "Two members of Necrony would go on to form Swedish grindcore band 'Nasum.'",
-        "cover": "https://github.com/red-velvet-corridor396/CSCI-202-2/blob/main/Assignment-6/images/necronycover.jpg",
+        "cover": "https://red-velvet-corridor396.github.io/CSCI-202-2/Assignment-6/images/necronycover.jpg",
         "spine": ""
     },
     {
@@ -146,7 +146,7 @@
         "country": ["Japan","United States"],
         "genre": ["Goregrind","Deathgrind","Death Metal"],
         "trivia": "",
-        "cover": "https://github.com/red-velvet-corridor396/CSCI-202-2/blob/main/Assignment-6/images/oozingcover.jpg",
+        "cover": "https://red-velvet-corridor396.github.io/CSCI-202-2/Assignment-6/images/oozingcover.jpg",
         "spine": ""
     },
     {
@@ -156,7 +156,7 @@
         "country": "Japan",
         "genre": "Goregrind",
         "trivia": "Pharmacist has disappeared off the face of the earth since 2022. He was based in Japan, but he has a Ukranian first and last name, so rumor has it that he returned to Ukraine to fight in the war with Russia.",
-        "cover": "https://github.com/red-velvet-corridor396/CSCI-202-2/blob/main/Assignment-6/images/pharmacist.jpg",
+        "cover": "https://red-velvet-corridor396.github.io/CSCI-202-2/Assignment-6/images/pharmacist.jpg",
         "spine": ""
     },
     {
