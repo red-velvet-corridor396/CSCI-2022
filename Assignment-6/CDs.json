@@ -1,5 +1,4 @@
-{
-    "albums":[
+[
         {
             "artist": "Autopsy",
             "album": "Severed Survival",
@@ -201,4 +200,3 @@
             "spine": ""
         }
     ]
-}
