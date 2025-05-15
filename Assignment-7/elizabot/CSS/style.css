@@ -1,0 +1,20 @@
+BODY {
+    background-image: url(/images/rally2.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+#banner {
+    position: relative;
+    right: 1.5em;
+}
+
+tbody {
+}
+
+#trump {
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+}
