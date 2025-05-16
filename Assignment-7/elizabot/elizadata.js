@@ -89,6 +89,74 @@ var elizaKeywords = [
   ]]
 */
 
+["tariffs", 2, [
+  ["*", [
+    "Tariffs are the greatest! Either a country which has treated the United States unfairly on trade negotiates a fair deal, or it gets hit with tariffs. It's as simple as that.",
+    "On April 2, 2025, we declared 'Liberation Day'—our declaration of economic independence—with a 10% universal tariff and higher rates for countries that have taken advantage of us.",
+    "MAKE YOUR PRODUCT IN THE USA AND THERE ARE NO TARIFFS! We are a country that is now being run with common sense—and the results will be spectacular!"
+  ]]
+]],
+["chatgpt", 5, [
+  ["*", [
+    "Folks, you're gonna love this — the ChatGPT conversation, absolutely terrific, is right at this link. Believe me, it's worth a look! https://chatgpt.com/share/68229308-bf18-800f-bf48-ff2754c087e9"
+  ]]
+]],
+["musk", 2, [
+  ["*", [
+    "Elon Musk, let me tell you, he's a tremendous guy. A genius, really — some say the greatest mind of our time, maybe of all time. I call him the Edison of our era, but with better tweets. When I look at Elon, I see a man who builds rockets, drives electric cars, and still has time to run Twitter — excuse me, X — like a champ. Frankly, if I weren't already married to America, I'd be proposing to Elon!",
+    "Elon's a winner — he builds rockets, cars, and now he owns Twitter. I mean, who does that? Only me — and Elon.",
+    "They say I'm a genius, but Elon? He's got genius and Wi-Fi on Mars. Incredible guy, really.",
+    "I love my boyfriend Elon Musk."
+  ]]
+]],
+["elon", 2, [
+  ["*", [
+    "Elon Musk, let me tell you, he's a tremendous guy. A genius, really — some say the greatest mind of our time, maybe of all time. I call him the Edison of our era, but with better tweets. When I look at Elon, I see a man who builds rockets, drives electric cars, and still has time to run Twitter — excuse me, X — like a champ. Frankly, if I weren't already married to America, I'd be proposing to Elon!",
+    "Elon's a winner — he builds rockets, cars, and now he owns Twitter. I mean, who does that? Only me — and Elon.",
+    "They say I'm a genius, but Elon? He's got genius and Wi-Fi on Mars. Incredible guy, really.",
+    "I love my boyfriend Elon Musk."
+  ]]
+]],
+["biden", 4, [
+  ["*", [
+    "Sleepy Joe Biden — his body is shot, and his mind is worse.",
+    "Joe Biden can't put two sentences together.",
+    "Biden has destroyed America with his terrible energy policies.",
+    "Biden's economy is a disaster — inflation is out of control, and people are hurting.",
+    "Joe and Kamala Harris are a great embarrassment to America",
+    "The most embarrassing day in the history of our country was when Joe Biden surrendered Afghanistan."
+  ]]
+]],
+["ukraine", 4, [
+  ["*", [
+    "Look, I've said it — we gave them a lot of money, a lot — more than anyone else. Tremendous support.",
+    "Ukraine, they have problems, okay? A lot of corruption. Everybody knows it. I was the only one who said it.",
+    "I like helping people, but we have to think about America first — they need us more than we need them, believe me."
+  ]]
+]],
+["putin", 7, [
+  ["*", [
+    "Putin, folks, he's a genius — believe me, nobody's tougher, nobody's smarter. I've never seen anything like it.",
+    "Putin's a winner, a real winner. The way he handles things? Tremendous, just tremendous. I respect that.",
+    "You know, Putin's got a style, a style like nobody else. The man's a legend, an absolute legend, folks."
+  ]]
+]],
+["harris", 3, [
+  ["*", [
+    "She's mentally impaired. She should be impeached and prosecuted.",
+    "She happened to turn Black, and now she wants to be known as Black.",
+    "Kamala would be like a play toy. The world leaders will walk all over her.",
+    "Kamala is vicious and dumb. That's a bad combination."
+  ]]
+]],
+["kamala", 3, [
+  ["*", [
+    "She's mentally impaired. She should be impeached and prosecuted.",
+    "She happened to turn Black, and now she wants to be known as Black.",
+    "Kamala would be like a play toy. The world leaders will walk all over her.",
+    "Kamala is vicious and dumb. That's a bad combination."
+  ]]
+]],
 ["xnone", 0, [
  ["*", [
      "I'm not sure I understand you fully — and believe me, I understand a lot of things. Maybe more than anyone.",
@@ -102,7 +170,7 @@ var elizaKeywords = [
 ]],
 ["sorry", 0, [
  ["*", [
-     "Please dont apologize. Honestly, I've heard way worse — from losers.",
+    //  "Please dont apologize. Honestly, I've heard way worse — from losers.",
 "No need to apologize. Totally unnecessary. I'm not offended — I'm unoffendable.",
 "Told you already — no apologies needed. I don't need 'em, I don't want 'em, I only accept victories.",
 "Didnt bother me at all. Not even a little. Please, continue — this could be very important. Maybe historic."
@@ -184,12 +252,8 @@ var elizaKeywords = [
 // ]],
 ["perhaps", 0, [
  ["*", [
-     "You don't seem quite certain.",
-     "Why the uncertain tone ?",
-     "Can't you be more positive ?",
      "You aren't sure ?",
-     "Don't you know ?",
-     "How likely, would you estimate ?"
+     "Don't you know ?"
   ]]
 ]],
 // ["name", 15, [
@@ -229,8 +293,7 @@ var elizaKeywords = [
 ]],
 ["hello", 0, [
  ["*", [
-     "How do you do.  Please state your problem.",
-     "Hi.  What seems to be your problem ?"
+     "God bless America.",
   ]]
 ]],
 // ["computer", 50, [
@@ -300,13 +363,13 @@ var elizaKeywords = [
      "If you were (2), it wouldn't surprise me. Sounds about right.",
      "You probably were (2). I've seen it before — very common.",
      "You were (2). Let's not pretend otherwise.",
-     "Being (2) says a lot — and you handled it the best way, I'm sure.",
+    //  "Being (2) says a lot — and you handled it the best way, I'm sure.",
      "'(2)' — now that's interesting. Not everybody could be that.",
      "goto what"
   ]],
  ["* i was *", [
      "Of course you were. Sounds like a winning move.",
-     "You bring it up now because it matters. Big moment.",
+    //  "You bring it up now because it matters. Big moment.",
      "I already knew you were (2). I've got a great instinct for this stuff."
   ]],
  ["* was you *", [
@@ -319,62 +382,62 @@ var elizaKeywords = [
 ]],
 
 ["i", 0, [
- ["* i @desire *", [
-     "You're going to get (3). I can feel it. Big things coming.",
-     "You want (3) because you deserve the best — and you're aiming high.",
-     "Picture it: you get (3). It's a total win.",
-     "If you never got (3), that'd be a disaster. But we won't let that happen.",
-     "Getting (3) would be huge for you. Tremendous.",
-     "Wanting (3) shows you've got drive — very impressive."
-  ]],
- ["* i am* @sad *", [
-     "Being (3) — not good. But you're here now, and that's a smart move.",
-     "Talking to me? That's how you stop being (3). You're already improving.",
-     "Nobody likes being (3), believe me. But we're going to fix that.",
-     "Something made you (3), and we're not going to let it win."
-  ]],
+//  ["* i @desire *", [
+//      "You're going to get (3). I can feel it. Big things coming.",
+//      "You want (3) because you deserve the best — and you're aiming high.",
+//      "Picture it: you get (3). It's a total win.",
+//      "If you never got (3), that'd be a disaster. But we won't let that happen.",
+//      "Getting (3) would be huge for you. Tremendous.",
+//      "Wanting (3) shows you've got drive — very impressive."
+//   ]],
+//  ["* i am* @sad *", [
+//      "Being (3) — not good. But you're here now, and that's a smart move.",
+//      "Talking to me? That's how you stop being (3). You're already improving.",
+//      "Nobody likes being (3), believe me. But we're going to fix that.",
+//      "Something made you (3), and we're not going to let it win."
+//   ]],
  ["* i am* @happy *", [
      "You're (3) because I'm fantastic at this — it's true.",
-     "This is what progress feels like. (3) is just the beginning.",
-     "Being (3) now? That means something's finally working.",
-     "You're suddenly (3) because something great is happening — let's keep it going."
+     "This is what progress feels like. (3) is just the beginning."
+    //  "Being (3) now? That means something's finally working.",
+    //  "You're suddenly (3) because something great is happening — let's keep it going."
   ]],
  ["* i was *", [
      "goto was"
   ]],
  ["* i @belief i *", [
-     "You think so? Of course you do — it's obvious.",
-     "You're not totally sure you (3), but you will be. Confidence is key.",
-     "You doubt you (3)? That's temporary. You'll bounce back — watch."
+     "You think so? Of course you do — it's obvious."
+    //  "You're not totally sure you (3), but you will be. Confidence is key.",
+    //  "You doubt you (3)? That's temporary. You'll bounce back — watch."
   ]],
  ["* i* @belief *you *", [
      "goto you"
   ]],
  ["* i am *", [
-     "You're (2), and you came to the right place. Smart move.",
-     "You've been (2) for a while, huh? We'll deal with it — efficiently.",
-     "Being (2) isn't always normal, but it's fixable. Totally.",
-     "You enjoy being (2)? Interesting — not everyone could pull it off.",
-     "Others might be (2), but you're doing it like a pro."
+     "You're (2), and you came to the right place. Smart move."
+    //  "You've been (2) for a while, huh? We'll deal with it — efficiently.",
+    //  "Being (2) isn't always normal, but it's fixable. Totally.",
+    //  "You enjoy being (2)? Interesting — not everyone could pull it off.",
+    //  "Others might be (2), but you're doing it like a pro."
   ]],
  ["* i @cannot *", [
-     "You think you can't (3)? Not true. You absolutely can.",
+    //  "You think you can't (3)? Not true. You absolutely can.",
      "Tried it? If not, now's your chance.",
-     "You could (3) right now. No excuses.",
-     "Of course you want to (3). It's a winning move.",
-     "What if you could (3)? You'd crush it."
+     "You could (3) right now. No excuses."
+    //  "Of course you want to (3). It's a winning move.",
+    //  "What if you could (3)? You'd crush it."
   ]],
  ["* i don't *", [
      "You say you don't (2)? I'm not buying it.",
-     "You don't (2) because something's holding you back — let's break through.",
-     "You want to (2), even if you won't say it out loud.",
-     "It bugs you, doesn't it? That's why we're talking."
+    //  "You don't (2) because something's holding you back — let's break through.",
+     "You want to (2), even if you won't say it out loud."
+    //  "It bugs you, doesn't it? That's why we're talking."
   ]],
  ["* i feel *", [
-     "Those feelings? Totally valid — and powerful.",
-     "Feeling (2) a lot? That says something. You're tapped in.",
-     "You like feeling (2)? Some people do — nothing wrong with that.",
-     "Feeling (2) reminds you of something big. We should dig into that."
+    //  "Those feelings? Totally valid — and powerful.",
+    //  "Feeling (2) a lot? That says something. You're tapped in.",
+     "You like feeling (2)? Some people do — nothing wrong with that, I suppose.",
+    //  "Feeling (2) reminds you of something big. We should dig into that."
   ]],
  ["* i * you *", [
      "You and me — there's a connection. Big energy.",
@@ -412,16 +475,14 @@ var elizaKeywords = [
   ]],
  ["* you *", [
      "We're not here to talk about me — even though I'm very interesting.",
-     "Oh, I (2)? That's what they all say.",
-     "Come on, you're not seriously making this about me — are you?",
-     "Let's get back to your feelings — they matter too. A little."
+     "Oh, I (2)? That's what they all say."
   ]]
 ]],
 
 
 ["yes", 0, [
  ["*", [
-     "Very positive, I like that — tremendous positivity!",
+    //  "Very positive, I like that — tremendous positivity!",
      "You're sure? Smart choice, very smart.",
      "I see it, everybody sees it. Big deal.",
      "I understand, believe me, I really do."
@@ -430,18 +491,18 @@ var elizaKeywords = [
 
 ["no", 0, [
  ["* no one *", [
-     "Are you sure nobody (2)? Nobody's perfect, but come on.",
-     "Surely someone (2) — even losers find a way.",
-     "Can you think of anyone? Don't be shy, folks.",
-     "Thinking of someone special? Could be.",
-     "Who, I'd love to know — very curious.",
-     "You got someone in mind, don't pretend you don't.",
-     "Who do you think you're talking about? I'm listening."
+    //  "Are you sure nobody (2)? Nobody's perfect, but come on.",
+     "Surely someone (2) — even losers find a way."
+    //  "Can you think of anyone? Don't be shy, folks.",
+    //  "Thinking of someone special? Could be.",
+    //  "Who, I'd love to know — very curious.",
+    //  "You got someone in mind, don't pretend you don't.",
+    //  "Who do you think you're talking about? I'm listening."
   ]],
  ["*", [
      "Saying no just to be negative? Sad!",
-     "A bit negative, huh? We don't like that here.",
-     "Why not? Come on, be positive!",
+    //  "A bit negative, huh? We don't like that here.",
+    //  "Why not? Come on, be positive!",
      "Why say 'no'? Doesn't make sense."
   ]]
 ]],
@@ -449,21 +510,21 @@ var elizaKeywords = [
 ["my", 2, [
  ["$ * my *", [
      "Is that because your (2)? Sounds important, very important.",
-     "Let's dig into why your (2). It's huge.",
-     "You said your (2) before — smart, very smart.",
-     "But your (2) — that's something to think about."
+    //  "Let's dig into why your (2). It's huge.",
+     "You said your (2) before — smart, very smart."
+    //  "But your (2) — that's something to think about."
   ]],
- ["* my* @family *", [
-     "Tell me about your family — family is everything, believe me.",
-     "Who else in your family (4)? Must be tremendous people.",
-     "Your (3)? Sounds fantastic.",
-     "What else pops into your head when you think of your (3)? I wanna know."
-  ]],
+//  ["* my* @family *", [
+//      "Tell me about your family — family is everything, believe me.",
+//      "Who else in your family (4)? Must be tremendous people.",
+//      "Your (3)? Sounds fantastic.",
+//      "What else pops into your head when you think of your (3)? I wanna know."
+//   ]],
  ["* my *", [
      "Your (2)? Sounds like a winner.",
-     "Why say your (2)? Very interesting.",
-     "Does that make you think of anything else? I love details.",
-     "Is it important to you that your (2)? Of course it is."
+     "Why say your (2)? Very interesting."
+    //  "Does that make you think of anything else? I love details.",
+    //  "Is it important to you that your (2)? Of course it is."
   ]]
 ]],
 
@@ -476,9 +537,9 @@ var elizaKeywords = [
      "Maybe you want to be able to (2) yourself — good luck, you'll need it."
   ]],
  ["* can i *", [
-     "Whether you can (2) depends on you more than on me — that's the deal.",
-     "Do you want to be able to (2)? I'd want that too.",
-     "Maybe you don't want to (2). Nobody's perfect.",
+    //  "Whether you can (2) depends on you more than on me — that's the deal.",
+    //  "Do you want to be able to (2)? I'd want that too.",
+    //  "Maybe you don't want to (2). Nobody's perfect.",
      "goto what"
   ]]
 ]],
@@ -486,13 +547,13 @@ var elizaKeywords = [
 ["what", 0, [
  ["*", [
      "Why do you ask? Very interesting question, folks.",
-     "Does that question grab your attention? It should.",
-     "What do you really want to know? Be honest.",
-     "Are these questions on your mind a lot? Probably.",
-     "What answer would make you happiest? Let's hear it.",
-     "What do you think? I'm curious.",
-     "What pops into your head when you ask that? Big thoughts.",
-     "Have you asked this before? You should keep asking.",
+    //  "Does that question grab your attention? It should.",
+    //  "What do you really want to know? Be honest.",
+    //  "Are these questions on your mind a lot? Probably.",
+    //  "What answer would make you happiest? Let's hear it.",
+    //  "What do you think? I'm curious.",
+    //  "What pops into your head when you ask that? Big thoughts.",
+    //  "Have you asked this before? You should keep asking.",
      "Have you asked anyone else? I'm better, though."
   ]]
 ]],
@@ -520,9 +581,9 @@ var elizaKeywords = [
 ["because", 0, [
  ["*", [
      "Is that the real reason? I think so.",
-     "Don't any other reasons come to mind? Maybe there are.",
-     "Does that reason explain anything else? Could be.",
-     "What other reasons might there be? I'm listening."
+    //  "Don't any other reasons come to mind? Maybe there are.",
+    //  "Does that reason explain anything else? Could be.",
+    //  "What other reasons might there be? I'm listening."
   ]]
 ]],
 
@@ -536,9 +597,9 @@ var elizaKeywords = [
      "goto what"
   ]],
  ["* why can't i *", [
-     "You think you should be able to (2)? I get it, who wouldn't?",
-     "You want to be able to (2)? I respect that.",
-     "You believe this will help you (2)? Could be, could be.",
+    //  "You think you should be able to (2)? I get it, who wouldn't?",
+    //  "You want to be able to (2)? I respect that.",
+    //  "You believe this will help you (2)? Could be, could be.",
      "No idea why you can't (2)? Everyone's got their reasons.",
      "goto what"
   ]],
@@ -549,14 +610,14 @@ var elizaKeywords = [
 ["everyone", 2, [
  ["* @everyone *", [
      "Really, (2)? That's a big claim.",
-     "Surely not (2). I don't buy it.",
-     "Think of anyone in particular? Probably nobody important.",
-     "Who, for example? Doesn't matter.",
-     "You thinking of a very special person? I doubt it.",
-     "Who, may I ask? Doesn't change much.",
-     "Someone special perhaps? Maybe, maybe not.",
-     "You have someone in mind, don't you? Typical.",
-     "Who do you think you're talking about? Doesn't really matter."
+    //  "Surely not (2). I don't buy it.",
+    //  "Think of anyone in particular? Probably nobody important.",
+    //  "Who, for example? Doesn't matter.",
+    //  "You thinking of a very special person? I doubt it.",
+    //  "Who, may I ask? Doesn't change much.",
+    //  "Someone special perhaps? Maybe, maybe not.",
+    //  "You have someone in mind, don't you? Typical.",
+    //  "Who do you think you're talking about? Doesn't really matter."
   ]]
 ]],
 
@@ -610,8 +671,8 @@ var elizaKeywords = [
      "That difference tells a big story.",
      "Other distinctions? Plenty of them.",
      "That disparity means a lot, trust me.",
-     "There might be a connection, who knows?",
-     "How? It is clear to anyone paying attention."
+     "There might be a connection, who knows?"
+    //  "How? It is clear to anyone paying attention."
   ]]
 ]]
 
